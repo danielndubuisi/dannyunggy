@@ -1,0 +1,41 @@
+.location-info {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 300px;
+  min-height: 100px;
+  padding: 10px;
+  z-index: 1;
+  background-color: #ddd;
+  border-radius: 20px;
+  opacity: 0.8;
+
+  h2 {
+    padding: 10px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      list-style-type: none;
+      margin: 10px;
+
+      li {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .image {
+    margin-right: 20px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+}
