@@ -18,14 +18,14 @@ const Sidebar = () => {
           <Link to="/">
             <li>
               <DashboardIcon className="icon" />
-              <span>Dashboard</span>
+              <span>Tracker</span>
             </li>
           </Link>
           <p className="title">SERVICE</p>
           <Link to="/">
             <li>
               <BusinessIcon className="icon" />
-              <span>Sales</span>
+              <span>Clients</span>
             </li>
           </Link>
           <Link to="/reps">

@@ -1,0 +1,16 @@
+.pin {
+  .icon {
+    &.active {
+      color: green;
+    }
+    &.bullwhip {
+      color: yellow;
+    }
+    &.dormant {
+      color: red;
+    }
+    &.inactive {
+      color: grey;
+    }
+  }
+}
