@@ -10,7 +10,10 @@ const LocationInfoBox = ({ info }) => {
             ID: <span>{info.id}</span>
           </li>
           <li>
-            NAME: <span>{info.name}</span>
+            Name: <span>{info.name}</span>
+          </li>
+          <li>
+            LCDA: <span>{info.lcda}</span>
           </li>
         </ul>
         <div className="image">

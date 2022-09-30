@@ -1,13 +1,15 @@
 import { useState } from "react";
-import Map from "../components/map/Map";
-import { eventData } from "../data/Data";
-import Spinner from "../components/spinner/Spinner";
-import Sidebar from "../components/sidebar/Sidebar";
+import Map from "../../components/map/Map";
+import { eventData } from "../../data/Data";
+import Spinner from "../../components/spinner/Spinner";
+import Sidebar from "../../components/sidebar/Sidebar";
 import "./Home.scss";
 
 const Home = () => {
   // const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  console.log(setLoading);
 
   // useEffect(() => {
   //   const fetchEvents = async () => {

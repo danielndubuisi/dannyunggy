@@ -2,15 +2,19 @@
   .icon {
     &.active {
       color: green;
+      cursor: pointer;
     }
     &.bullwhip {
       color: yellow;
+      cursor: pointer;
     }
     &.dormant {
       color: red;
+      cursor: pointer;
     }
     &.inactive {
       color: grey;
+      cursor: pointer;
     }
   }
 }

@@ -1,7 +1,8 @@
 export const eventData = [
   {
     id: 1,
-    name: "Ojota",
+    name: "Royal Pharmacy",
+    lcda: "Ojota",
     status: "active",
     lat: 6.5863,
     lng: 3.38252,
@@ -9,7 +10,8 @@ export const eventData = [
   },
   {
     id: 2,
-    name: "Ikeja",
+    name: "Careforte Pharmacy",
+    lcda: "Ikeja",
     status: "dormant",
     lat: 6.601838,
     lng: 3.351486,
@@ -17,7 +19,8 @@ export const eventData = [
   },
   {
     id: 3,
-    name: "Lekki",
+    name: "Maxin Pharmacy",
+    lcda: "Lekki",
     status: "bullwhip",
     lat: 6.41285,
     lng: 4.0876,
@@ -25,7 +28,8 @@ export const eventData = [
   },
   {
     id: 4,
-    name: "Festac",
+    name: "James & Johnson",
+    lcda: "Festac",
     status: "inactive",
     lat: 6.46699,
     lng: 3.28772,
@@ -33,7 +37,8 @@ export const eventData = [
   },
   {
     id: 5,
-    name: "Yaba",
+    name: "Sabo Pharmacy",
+    lcda: "Yaba",
     status: "active",
     lat: 6.5095,
     lng: 3.3711,
@@ -41,7 +46,8 @@ export const eventData = [
   },
   {
     id: 6,
-    name: "Ikotun",
+    name: "Ajayi Healthcare",
+    lcda: "Ikotun",
     status: "dormant",
     lat: 6.5631,
     lng: 3.2506,
@@ -49,7 +55,8 @@ export const eventData = [
   },
   {
     id: 7,
-    name: "Mowe",
+    name: "Ijebu Clinics",
+    lcda: "Mowe",
     status: "inactive",
     lat: 6.8085,
     lng: 3.4367,

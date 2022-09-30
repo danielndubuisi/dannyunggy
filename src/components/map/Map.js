@@ -30,7 +30,12 @@ export default function Map({ eventData }) {
               lat={ev.lat}
               lng={ev.lng}
               onClick={() =>
-                setLocationInfo({ id: ev.id, name: ev.name, img: ev.img })
+                setLocationInfo({
+                  id: ev.id,
+                  name: ev.name,
+                  img: ev.img,
+                  lcda: ev.lcda,
+                })
               }
             />
           ))}
