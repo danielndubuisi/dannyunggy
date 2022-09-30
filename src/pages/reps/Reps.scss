@@ -4,5 +4,11 @@
 
   .reps-container {
     flex: 6;
+
+    .widgets {
+      margin: 20px;
+      display: flex;
+      gap: 20px;
+    }
   }
 }
