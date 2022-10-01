@@ -27,6 +27,12 @@
       font-size: 12px;
       border-bottom: 1px solid grey;
       width: max-content;
+      cursor: pointer;
+
+      &:hover {
+        color: cornflowerblue;
+        border-bottom: 1px solid cornflowerblue;
+      }
     }
 
     .percentage {

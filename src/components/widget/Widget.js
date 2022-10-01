@@ -1,5 +1,6 @@
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import "./widget.scss";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AdjustOutlinedIcon from "@mui/icons-material/AdjustOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
@@ -8,16 +9,15 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 const Widget = ({ type }) => {
   let data;
 
-  //temporary
-  const amount = 100;
-  const diff = 20;
-
   switch (type) {
     case "clients":
       data = {
         title: "CLIENTS",
         isMoney: false,
-        link: "See all clients",
+        amount: 127,
+        diff: 20,
+        trend: "positive",
+        link: "See fulfilment rate",
         icon: (
           <PersonOutlinedIcon
             className="icon"
@@ -33,6 +33,10 @@ const Widget = ({ type }) => {
       data = {
         title: "ORDERS",
         isMoney: false,
+        amount: 250,
+        diff: 10,
+        trend: "negative",
+
         link: "View orders",
         icon: (
           <ShoppingCartOutlinedIcon
@@ -49,6 +53,9 @@ const Widget = ({ type }) => {
       data = {
         title: "EARNINGS",
         isMoney: true,
+        amount: "12,500,000",
+        diff: 10,
+        trend: "negative",
         link: "View net earnings",
         icon: (
           <MonetizationOnOutlinedIcon
@@ -65,7 +72,10 @@ const Widget = ({ type }) => {
       data = {
         title: "TARGET",
         isMoney: true,
-        link: "See target",
+        amount: "20,000,000",
+        diff: 30,
+        trend: "positive",
+        link: "See monthly target",
         icon: (
           <AdjustOutlinedIcon
             className="icon"
@@ -85,15 +95,19 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"}
-          {amount}
+          {data.isMoney && "₦"}
+          {data.amount}
         </span>
         <span className="link">{data.link}</span>
       </div>
       <div className="right">
-        <div className="percentage positive">
-          <KeyboardArrowUpOutlinedIcon />
-          {diff}%
+        <div className={`percentage ${data.trend}`}>
+          {data.trend === "positive" ? (
+            <KeyboardArrowUpOutlinedIcon />
+          ) : (
+            <KeyboardArrowDownOutlinedIcon />
+          )}
+          {data.diff}%
         </div>
         {data.icon}
       </div>
