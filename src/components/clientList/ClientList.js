@@ -1,4 +1,6 @@
 import "./ClientList.scss";
+import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
+import ArrowDownwardOutlinedIcon from "@mui/icons-material/ArrowDownwardOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -25,6 +27,7 @@ const ClientList = ({ rows }) => {
             </TableCell>
             <TableCell className="tableHead">STATUS</TableCell>
             <TableCell className="tableHead">AVG PURCHASE</TableCell>
+            <TableCell className="tableHead">CLIENT FULFILMENT</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -42,6 +45,14 @@ const ClientList = ({ rows }) => {
               </TableCell>
               <TableCell className="tableCell wallet">
                 {row.avgPurchase}
+              </TableCell>
+              <TableCell className="tableCell fulfil">
+                <span>{row.fulfilment}%</span>
+                {row.fulfilment > 70 ? (
+                  <ArrowUpwardOutlinedIcon className="icon up" />
+                ) : (
+                  <ArrowDownwardOutlinedIcon className="icon down" />
+                )}
               </TableCell>
             </TableRow>
           ))}

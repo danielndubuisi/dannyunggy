@@ -7,6 +7,8 @@ export const eventData = [
     onboardDate: "19-02-2022",
     lat: 6.5863,
     lng: 3.38252,
+    fulfilment: 72,
+
     img: "https://loremflickr.com/320/240/1",
     avgPurchase: "₦ 1.5M",
   },
@@ -18,6 +20,8 @@ export const eventData = [
     onboardDate: "19-02-2021",
     lat: 6.601838,
     lng: 3.351486,
+    fulfilment: 60,
+
     img: "https://loremflickr.com/320/240/2",
     avgPurchase: "₦ 500K",
   },
@@ -29,6 +33,8 @@ export const eventData = [
     onboardDate: "19-02-2018",
     lat: 6.41285,
     lng: 4.0876,
+    fulfilment: 90,
+
     img: "https://loremflickr.com/320/240/3",
     avgPurchase: "₦ 20M",
   },
@@ -40,6 +46,8 @@ export const eventData = [
     onboardDate: "19-02-2022",
     lat: 6.46699,
     lng: 3.28772,
+    fulfilment: 80,
+
     img: "https://loremflickr.com/320/240/4",
     avgPurchase: "₦ 300K",
   },
@@ -51,6 +59,8 @@ export const eventData = [
     onboardDate: "19-02-2019",
     lat: 6.5095,
     lng: 3.3711,
+    fulfilment: 65,
+
     img: "https://loremflickr.com/320/240/5",
     avgPurchase: "₦ 2.3M",
   },
@@ -62,6 +72,8 @@ export const eventData = [
     onboardDate: "19-02-2020",
     lat: 6.5631,
     lng: 3.2506,
+    fulfilment: 70,
+
     img: "https://loremflickr.com/320/240/6",
     avgPurchase: "₦ 5M",
   },
@@ -73,6 +85,8 @@ export const eventData = [
     onboardDate: "19-02-2021",
     lat: 6.8085,
     lng: 3.4367,
+    fulfilment: 50,
+
     img: "https://loremflickr.com/320/240/7",
     avgPurchase: "₦ 200K",
   },
@@ -84,6 +98,8 @@ export const eventData = [
     status: "Active",
     lat: 6.8085,
     lng: 3.4367,
+    fulfilment: 93,
+
     img: "https://loremflickr.com/320/240/8",
     avgPurchase: "₦ 500K",
   },
@@ -96,6 +112,8 @@ export const eventData = [
     lcda: "Yaba",
     lat: 6.481729,
     lng: 3.374034,
+    fulfilment: 80,
+
     img: "https://loremflickr.com/320/240/9",
   },
   {
@@ -107,6 +125,8 @@ export const eventData = [
     avgPurchase: "₦ 900K",
     lat: 6.602157,
     lng: 3.277552,
+    fulfilment: 90,
+
     img: "https://loremflickr.com/320/240/10",
   },
   {
@@ -118,6 +138,8 @@ export const eventData = [
     avgPurchase: "₦ 700K",
     lat: 6.494298,
     lng: 3.135918,
+    fulfilment: 90,
+
     img: "https://loremflickr.com/320/240/11",
   },
   {
@@ -129,6 +151,7 @@ export const eventData = [
     avgPurchase: "₦ 3M",
     lat: 6.665988,
     lng: 3.286242,
+    fulfilment: 40,
     img: "https://loremflickr.com/320/240/12",
   },
   {
@@ -140,6 +163,7 @@ export const eventData = [
     avgPurchase: "₦ 80K",
     lat: 6.625022,
     lng: 3.313993,
+    fulfilment: 90,
     img: "https://loremflickr.com/320/240/13",
   },
 ];

@@ -54,7 +54,23 @@
 
   .tableCell {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+
+    &.fulfil {
+      display: flex;
+      gap: 5px;
+
+      .icon {
+        font-size: 18px;
+        &.up {
+          color: green;
+        }
+
+        &.down {
+          color: red;
+        }
+      }
+    }
 
     &.wallet {
       font-weight: 500;
