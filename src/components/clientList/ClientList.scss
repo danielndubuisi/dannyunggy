@@ -1,0 +1,63 @@
+.table {
+  margin-top: 20px;
+  width: 90%;
+
+  .tableHead {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 0.1px;
+
+    &.flex {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .icon {
+      font-size: 14px;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Active {
+      font-weight: 600;
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+    &.Inactive {
+      font-weight: 600;
+      color: grey;
+      background-color: rgba(134, 125, 125, 0.151);
+    }
+    &.Bullwhip {
+      font-weight: 600;
+      color: goldenrod;
+      background-color: rgba(218, 165, 32, 0.2);
+    }
+    &.Dormant {
+      font-weight: 600;
+      color: red;
+      background-color: rgba(204, 25, 25, 0.151);
+    }
+  }
+
+  .tableRow {
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(216, 212, 212, 0.658);
+    }
+  }
+
+  .tableCell {
+    font-weight: 400;
+    font-size: 14px;
+
+    &.wallet {
+      font-weight: 500;
+    }
+  }
+}

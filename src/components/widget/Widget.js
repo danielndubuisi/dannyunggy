@@ -5,6 +5,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AdjustOutlinedIcon from "@mui/icons-material/AdjustOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { Link } from "react-router-dom";
 
 const Widget = ({ type }) => {
   let data;
@@ -17,6 +18,7 @@ const Widget = ({ type }) => {
         amount: 127,
         diff: 20,
         trend: "positive",
+        nav: "clients",
         link: "See fulfilment rate",
         icon: (
           <PersonOutlinedIcon
@@ -36,7 +38,7 @@ const Widget = ({ type }) => {
         amount: 250,
         diff: 10,
         trend: "negative",
-
+        nav: "orders",
         link: "View orders",
         icon: (
           <ShoppingCartOutlinedIcon
@@ -56,6 +58,7 @@ const Widget = ({ type }) => {
         amount: "12,500,000",
         diff: 10,
         trend: "negative",
+        nav: "reps",
         link: "View monthly projections",
         icon: (
           <MonetizationOnOutlinedIcon
@@ -75,6 +78,7 @@ const Widget = ({ type }) => {
         amount: "20,000,000",
         diff: 30,
         trend: "positive",
+        nav: "reps",
         link: "See monthly target",
         icon: (
           <AdjustOutlinedIcon
@@ -98,7 +102,9 @@ const Widget = ({ type }) => {
           {data.isMoney && "₦"}
           {data.amount}
         </span>
-        <span className="link">{data.link}</span>
+        <span className="link">
+          <Link to={`/${data.nav}`}>{data.link}</Link>
+        </span>
       </div>
       <div className="right">
         <div className={`percentage ${data.trend}`}>

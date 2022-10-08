@@ -1,18 +1,18 @@
 .pin {
   .icon {
-    &.active {
+    &.Active {
       color: green;
       cursor: pointer;
     }
-    &.bullwhip {
+    &.Bullwhip {
       color: yellow;
       cursor: pointer;
     }
-    &.dormant {
+    &.Dormant {
       color: red;
       cursor: pointer;
     }
-    &.inactive {
+    &.Inactive {
       color: grey;
       cursor: pointer;
     }

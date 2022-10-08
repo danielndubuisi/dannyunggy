@@ -6,6 +6,11 @@
   height: 100px;
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 
+  &:hover {
+    transition: all ease 0.5s;
+    transform: scale(1.09);
+  }
+
   .left,
   .right {
     display: flex;
@@ -25,12 +30,15 @@
 
     .link {
       font-size: 12px;
-      border-bottom: 1px solid grey;
       width: max-content;
       cursor: pointer;
 
-      &:hover {
+      a {
+        text-decoration: none;
         color: cornflowerblue;
+      }
+
+      &:hover {
         border-bottom: 1px solid cornflowerblue;
       }
     }
