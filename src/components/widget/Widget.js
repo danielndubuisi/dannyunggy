@@ -49,14 +49,14 @@ const Widget = ({ type }) => {
         ),
       };
       break;
-    case "earnings":
+    case "projections":
       data = {
-        title: "EARNINGS",
+        title: "PROJECTIONS",
         isMoney: true,
         amount: "12,500,000",
         diff: 10,
         trend: "negative",
-        link: "View net earnings",
+        link: "View monthly projections",
         icon: (
           <MonetizationOnOutlinedIcon
             className="icon"

@@ -25,6 +25,7 @@
 
       .search-icon {
         font-size: 15px;
+        padding-right: 10px;
       }
 
       input {
@@ -32,9 +33,12 @@
         outline: none;
         background: #fff;
         width: 100%;
+        padding-left: 10px;
+        font-size: 14px;
 
         &::placeholder {
-          font-size: 12px;
+          font-size: 14px;
+          padding-left: 5px;
         }
       }
     }
