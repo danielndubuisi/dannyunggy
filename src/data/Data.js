@@ -8,7 +8,6 @@ export const eventData = [
     lat: 6.5863,
     lng: 3.38252,
     fulfilment: 72,
-
     img: "https://loremflickr.com/320/240/1",
     avgPurchase: "₦ 1.5M",
   },
@@ -165,5 +164,45 @@ export const eventData = [
     lng: 3.313993,
     fulfilment: 90,
     img: "https://loremflickr.com/320/240/13",
+  },
+];
+
+export const chartData = [
+  { month: "February", collectibles: 4000, total: 2400, amt: 2400 },
+  {
+    month: "March",
+    collectibles: 3000,
+    total: 1398,
+    amt: 2210,
+  },
+  {
+    month: "April",
+    collectibles: 2000,
+    total: 9800,
+    amt: 2290,
+  },
+  {
+    month: "May",
+    collectibles: 2780,
+    total: 3908,
+    amt: 2000,
+  },
+  {
+    month: "June",
+    collectibles: 1890,
+    total: 4800,
+    amt: 2181,
+  },
+  {
+    month: "July",
+    collectibles: 2390,
+    total: 3800,
+    amt: 2500,
+  },
+  {
+    month: "August",
+    collectibles: 3490,
+    total: 4300,
+    amt: 2100,
   },
 ];

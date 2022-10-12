@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Tracker from "./pages/tracker/Tracker";
 import Clients from "./pages/clients/Clients";
 import Reps from "./pages/reps/Reps";
 import Orders from "./pages/orders/Orders";
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Overview />} />
-        <Route path="/tracker" element={<Home />} />
+        <Route path="/tracker" element={<Tracker />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/reps" element={<Reps />} />
         <Route path="/orders" element={<Orders />} />

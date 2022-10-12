@@ -3,9 +3,9 @@ import Map from "../../components/map/Map";
 import { eventData } from "../../data/Data";
 import Spinner from "../../components/spinner/Spinner";
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./Home.scss";
+import "./Tracker.scss";
 
-const Home = () => {
+const Tracker = () => {
   // const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -25,13 +25,13 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className="home">
+    <div className="tracker">
       <Sidebar />
-      <div className="home-container">
+      <div className="tracker-container">
         {!loading ? <Map eventData={eventData} /> : <Spinner />}
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Tracker;

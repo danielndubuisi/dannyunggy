@@ -4,6 +4,7 @@ import "./Overview.scss";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
+import { chartData } from "../../data/Data";
 
 const Overview = () => {
   return (
@@ -19,7 +20,7 @@ const Overview = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart />
+          <Chart data={chartData} />
         </div>
       </div>
     </div>
