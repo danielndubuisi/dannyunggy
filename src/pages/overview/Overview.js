@@ -4,9 +4,13 @@ import "./Overview.scss";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
-import { chartData } from "../../data/Data";
+import Spinner from "../../components/spinner/Spinner";
+import { useFetch } from "../../hooks/useFetch";
 
 const Overview = () => {
+  const url = "http://localhost:3000/chartData/";
+  const { error, isPending, data: chartData } = useFetch(url);
+
   return (
     <div className="overview">
       <Sidebar />
@@ -20,7 +24,9 @@ const Overview = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart data={chartData} />
+          {error && <p className="error">{error}</p>}
+          {isPending && <Spinner />}
+          {chartData && <Chart data={chartData} />}
         </div>
       </div>
     </div>
