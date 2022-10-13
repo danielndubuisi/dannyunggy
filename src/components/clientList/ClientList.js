@@ -1,7 +1,6 @@
 import "./ClientList.scss";
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
 import ArrowDownwardOutlinedIcon from "@mui/icons-material/ArrowDownwardOutlined";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -23,7 +22,6 @@ const ClientList = ({ rows }) => {
             <TableCell className="tableHead">CLIENT NAME</TableCell>
             <TableCell className="tableHead flex">
               <span>ONBOARD DATE</span>{" "}
-              <KeyboardArrowDownIcon className="icon" />
             </TableCell>
             <TableCell className="tableHead">STATUS</TableCell>
             <TableCell className="tableHead">AVG PURCHASE</TableCell>
@@ -35,7 +33,7 @@ const ClientList = ({ rows }) => {
             <TableRow
               key={row.id}
               className="tableRow"
-              onClick={() => navigate("/")}
+              onClick={() => navigate(`/clients/${row.id}`)}
             >
               <TableCell className="tableCell">{row.id}</TableCell>
               <TableCell className="tableCell">{row.name}</TableCell>

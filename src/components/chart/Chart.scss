@@ -4,6 +4,10 @@
   padding: 20px;
   color: grey;
 
+  &:hover {
+    transform: scale(1.01);
+  }
+
   .title {
     margin-bottom: 20px;
   }

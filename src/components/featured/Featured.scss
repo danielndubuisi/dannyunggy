@@ -3,6 +3,11 @@
   padding: 10px;
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 
+  &:hover {
+    transform: scale(1.03);
+    transition: all ease 0.3s;
+  }
+
   .top {
     display: flex;
     align-items: center;
