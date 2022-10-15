@@ -32,6 +32,7 @@ export default function Map({ eventData }) {
               onClick={() =>
                 setLocationInfo({
                   id: ev.id,
+                  status: ev.status,
                   name: ev.name,
                   img: ev.img,
                   lcda: ev.lcda,

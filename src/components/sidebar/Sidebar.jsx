@@ -2,7 +2,9 @@ import "./Sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import SettingsIcon from "@mui/icons-material/Settings";
+import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
 import BusinessIcon from "@mui/icons-material/Business";
+import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -30,6 +32,13 @@ const Sidebar = () => {
               <span>Tracker</span>
             </li>
           </Link>
+          <Link to="/sales">
+            <li>
+              <AttachMoneyOutlinedIcon className="icon" />
+              <span>Sales</span>
+            </li>
+          </Link>
+
           <Link to="/clients">
             <li>
               <BusinessIcon className="icon" />
@@ -46,6 +55,12 @@ const Sidebar = () => {
             <li>
               <CreditCardOutlinedIcon className="icon" />
               <span>Orders</span>
+            </li>
+          </Link>
+          <Link to="/analysis">
+            <li>
+              <TrendingUpOutlinedIcon className="icon" />
+              <span>Analytics</span>
             </li>
           </Link>
           <p className="title">PROFILE</p>

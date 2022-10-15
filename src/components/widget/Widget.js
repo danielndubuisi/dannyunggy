@@ -58,7 +58,7 @@ const Widget = ({ type }) => {
         amount: "12,500,000",
         diff: 10,
         trend: "negative",
-        nav: "reps",
+        nav: "sales",
         link: "View monthly projections",
         icon: (
           <MonetizationOnOutlinedIcon

@@ -1,13 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import "./LocationInfoBox.scss";
 
 const LocationInfoBox = ({ info }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="location-info">
+    <div
+      className="location-info"
+      onClick={() => navigate(`/clients/${info.id}`)}
+    >
       <h2>Client Info</h2>
       <div className="content">
         <ul>
           <li>
-            ID: <span>{info.id}</span>
+            Status: <span>{info.status}</span>
           </li>
           <li>
             Name: <span>{info.name}</span>

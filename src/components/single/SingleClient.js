@@ -15,10 +15,21 @@ const SingleClient = () => {
       <Sidebar />
       <div className="client-container">
         <Navbar />
-        <h2>Single Client page - {id}</h2>
         {error && <p className="error">{error}</p>}
         {isPending && <Spinner />}
-        {data && <h1>{data.name}</h1>}
+        {data && (
+          <div>
+            <h2>{data.name}</h2>
+            <h4>What to show...</h4>
+            <ul>
+              <li>Recievable days</li>
+              <li>Avg Purchase</li>
+              <li>Purchase pattern (trend line)</li>
+              <li>Payment status</li>
+              <li>No. of orders</li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
