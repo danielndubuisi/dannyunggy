@@ -18,10 +18,11 @@ const SingleClient = () => {
         {error && <p className="error">{error}</p>}
         {isPending && <Spinner />}
         {data && (
-          <div>
+          <div className="single">
             <h2>{data.name}</h2>
             <h4>What to show...</h4>
             <ul>
+              <li>Client category</li>
               <li>Recievable days</li>
               <li>Avg Purchase</li>
               <li>Purchase pattern (trend line)</li>

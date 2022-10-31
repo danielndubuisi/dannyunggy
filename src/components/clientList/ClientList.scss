@@ -8,12 +8,6 @@
     color: #666;
     letter-spacing: 0.1px;
 
-    &.flex {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-
     .icon {
       font-size: 14px;
     }
@@ -57,7 +51,6 @@
     font-size: 13px;
 
     &.fulfil {
-      display: flex;
       gap: 5px;
 
       .icon {

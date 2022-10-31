@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import StarRateIcon from "@mui/icons-material/StarRate";
 import "./LocationInfoBox.scss";
 
 const LocationInfoBox = ({ info }) => {
@@ -13,16 +14,17 @@ const LocationInfoBox = ({ info }) => {
       <div className="content">
         <ul>
           <li>
-            Status: <span>{info.status}</span>
-          </li>
-          <li>
             Name: <span>{info.name}</span>
           </li>
           <li>
             LCDA: <span>{info.lcda}</span>
           </li>
+          <li>
+            Purchase: <span>{info.avgPurchase}</span>
+          </li>
         </ul>
         <div className="image">
+          <StarRateIcon className="icon" />
           <img src={info.img} alt="profile" />
         </div>
       </div>

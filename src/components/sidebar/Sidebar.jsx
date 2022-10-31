@@ -9,8 +9,11 @@ import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar">
       <div className="top">
@@ -79,8 +82,14 @@ const Sidebar = () => {
       <div className="bottom">
         <p className="title">THEME</p>
         <div className="bottom-container">
-          <div className="colorOptions"></div>
-          <div className="colorOptions"></div>
+          <div
+            className="colorOptions"
+            onClick={() => dispatch({ type: "LIGHT" })}
+          ></div>
+          <div
+            className="colorOptions"
+            onClick={() => dispatch({ type: "DARK" })}
+          ></div>
         </div>
       </div>
     </div>
