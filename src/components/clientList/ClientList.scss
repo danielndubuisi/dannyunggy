@@ -17,7 +17,7 @@
     padding: 5px;
     border-radius: 5px;
 
-    &.Active {
+    &.ACTIVE {
       font-weight: 600;
       color: green;
       background-color: rgba(0, 128, 0, 0.151);
@@ -27,7 +27,7 @@
       color: grey;
       background-color: rgba(134, 125, 125, 0.151);
     }
-    &.Bullwhip {
+    &.active {
       font-weight: 600;
       color: goldenrod;
       background-color: rgba(218, 165, 32, 0.2);
@@ -42,7 +42,7 @@
   .tableRow {
     &:hover {
       cursor: pointer;
-      background-color: rgba(216, 212, 212, 0.658);
+      background-color: #34a6f150;
     }
   }
 

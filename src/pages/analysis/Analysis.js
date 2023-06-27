@@ -6,7 +6,13 @@ const Sales = () => {
     <div className="analysis">
       <Sidebar />
       <div className="analysis-container">
-        <h3>All analysis go here...</h3>
+        <h3>Analytics</h3>
+        <ul>
+          <li>Client optimization strategy</li>
+          <li>KPI support</li>
+          <li>Growth analysis - per rep / per client</li>
+          <li>Leads tracker via referrals/lead tags</li>
+        </ul>
       </div>
     </div>
   );

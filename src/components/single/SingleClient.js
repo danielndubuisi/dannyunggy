@@ -19,13 +19,17 @@ const SingleClient = () => {
         {isPending && <Spinner />}
         {data && (
           <div className="single">
-            <h2>{data.name}</h2>
-            <h4>What to show...</h4>
+            <img src={data.img} alt="client-pic" />
+            <h2>Name: {data.name}</h2>
+            <p>Location: {data.lcda}</p>
+            <p>Avg Purchase: {data.avgPurchase}</p>
+            <p>Status: {data.status}</p>
+            <p>Current fulfilment(%): {data.fulfilment}</p>
+            <h4>Suggestions to show...</h4>
             <ul>
+              <li>Purchase pattern (trend line)</li>
               <li>Client category</li>
               <li>Recievable days</li>
-              <li>Avg Purchase</li>
-              <li>Purchase pattern (trend line)</li>
               <li>Payment status</li>
               <li>No. of orders</li>
             </ul>
